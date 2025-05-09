@@ -1,10 +1,16 @@
-from controller.backtrack import solve_backtracking
+from controller.genetic_algorithem import *
 
+size = 12
+res, list = solve_genetic(size)
+print(res)
 
-result, path, nodes = solve_backtracking(7)
+def p(res, size):
+    board = ''
+    for r in range(size):
+        for c in range(size):
+            board += 'Q ' if res[r] == c else '. '
+        board += '\n'
+    return board
 
-print('result= \n', result)
-print('num of nodes\n', nodes)
-
-for b in path:
-    print(b)
+print(p(res, size))
+print(len(list))
