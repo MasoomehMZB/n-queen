@@ -22,7 +22,7 @@ def crossover(parent1, parent2):
     point = random.randint(0, len(parent1) - 1)
     return parent1[:point] + parent2[point:]
 
-def solve_genetic(size, population_size=100, generations=100):
+def solve_genetic(size, population_size=100, generations=1000):
     population = [random.sample(range(size), size) for _ in range(population_size)]
     generation_best = []
 
