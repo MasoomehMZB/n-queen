@@ -1,16 +1,7 @@
-from controller.genetic_algorithem import *
+import tkinter as tk
+from view.gui import NQueenGUI
 
-size = 12
-res, list = solve_genetic(size)
-print(res)
-
-def p(res, size):
-    board = ''
-    for r in range(size):
-        for c in range(size):
-            board += 'Q ' if res[r] == c else '. '
-        board += '\n'
-    return board
-
-print(p(res, size))
-print(len(list))
+if __name__ == "__main__":
+    root = tk.Tk()
+    app = NQueenGUI(root)
+    root.mainloop()

@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1bfa628-28d7-46e1-b946-3935e472cbce" name="Changes" comment="made board and added backtrack logic">
-      <change afterPath="$PROJECT_DIR$/controller/genetic_algorithem.py" afterDir="false" />
+    <list default="true" id="f1bfa628-28d7-46e1-b946-3935e472cbce" name="Changes" comment="Added genetic algorithm; crossover: one-point, fitness: number of conflicts, mutation: random queen displacement">
+      <change afterPath="$PROJECT_DIR$/controller/controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/gui.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/backtrack.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/backtrack.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/genetic_algorithem.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/genetic_algorithm.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,6 +59,11 @@
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\هوش\n_queen\model" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -80,11 +88,20 @@
       <option name="project" value="LOCAL" />
       <updated>1746788619907</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added genetic algorithm; crossover: one-point, fitness: number of conflicts, mutation: random queen displacement">
+      <option name="closed" value="true" />
+      <created>1746800604148</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1746800604148</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="made board and added backtrack logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="made board and added backtrack logic" />
+    <MESSAGE value="Added genetic algorithm; crossover: one-point, fitness: number of conflicts, mutation: random queen displacement" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added genetic algorithm; crossover: one-point, fitness: number of conflicts, mutation: random queen displacement" />
   </component>
 </project>
