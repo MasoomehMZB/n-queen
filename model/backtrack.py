@@ -1,6 +1,7 @@
 from model.board import Board
 
 def solve_backtracking(size):
+    # Solves the N-Queens problem using backtracking
     board = Board(size)
     path = []
     expanded_nodes = [0]
@@ -22,5 +23,3 @@ def solve_backtracking(size):
         return None
 
     return backtrack(0)
-
-

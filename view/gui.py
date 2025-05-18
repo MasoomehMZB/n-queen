@@ -4,6 +4,7 @@ from controller.controller import NQueenController
 
 class NQueenGUI:
     def __init__(self, root):
+        # Initialize the GUI components
         self.root = root
         self.root.title("N-Queens Solver")
 
@@ -30,6 +31,7 @@ class NQueenGUI:
         self.info_label.pack()
 
     def handle_solve(self):
+        # Handle the solve button click
         self.canvas.delete("all")
         try:
             size = int(self.n_entry.get())
@@ -41,6 +43,7 @@ class NQueenGUI:
         self.controller.solve(size, method)
 
     def show_solution(self, positions, size):
+        # Draw the board and queens for the given solution
         cell_size = 400 // size
         for row in range(size):
             for col in range(size):
@@ -54,9 +57,11 @@ class NQueenGUI:
                     self.canvas.create_oval(x1 + 10, y1 + 10, x2 - 10, y2 - 10, fill="red")
 
     def show_info(self, text):
+        # Display information to the user
         self.info_label.config(text=text)
 
     def animate_backtracking(self, path, size, delay=500):
+        # Animate the backtracking process step by step
         self.step_index = 0
         self.path = path
         self.board_size = size
@@ -64,6 +69,7 @@ class NQueenGUI:
         self._animate_step()
 
     def _animate_step(self):
+        # Show the next step in the animation
         if self.step_index >= len(self.path):
             return  # End of animation
 
@@ -71,4 +77,3 @@ class NQueenGUI:
         self.show_solution(positions, self.board_size)
         self.step_index += 1
         self.root.after(self.delay, self._animate_step)
-

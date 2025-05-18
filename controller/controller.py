@@ -6,6 +6,7 @@ class NQueenController:
         self.view = view  # reference to the GUI class
 
     def solve(self, size, method):
+        # Dispatches the solving method based on user selection
         if method == "backtracking":
             result = solve_backtracking(size)
             if result:

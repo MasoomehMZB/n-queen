@@ -1,6 +1,6 @@
 import random
 
-# Counts number of queen conflicts
+# Counts number of queen conflicts (negative value for maximization)
 def fitness(positions):
     size = len(positions)
     attacks = 0
@@ -23,6 +23,7 @@ def crossover(parent1, parent2):
     return parent1[:point] + parent2[point:]
 
 def solve_genetic(size, population_size=100, generations=1000):
+    # Solves the N-Queens problem using a genetic algorithm
     population = [random.sample(range(size), size) for _ in range(population_size)]
     generation_best = []
 
